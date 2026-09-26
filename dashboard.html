@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>User Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="script.js" defer></script>
+
+</head>
+
+
+
+<body>
+
+    <!-- ==============================
+         HEADER
+    =============================== -->
+
+    <header>
+
+        <h1>User Dashboard</h1>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+        </nav>
+
+    </header>
+<div class="welcome-card">
+
+    <h2 id="welcomeUser">
+        Welcome 👋
+    </h2>
+
+    <p>
+        Manage your lost and found items easily.
+    </p>
+
+    <div class="welcome-stats">
+
+        <div>
+            <strong id="userPosts">
+                0
+            </strong>
+            <span>My Posts</span>
+        </div>
+
+        <div>
+            <strong id="userRecovered">
+                0
+            </strong>
+            <span>Recovered</span>
+        </div>
+
+    </div>
+
+</div>
+    <!-- ==============================
+         STATISTICS
+    =============================== -->
+    <section class="stats">
+
+    <div class="stat-card">
+        
+    <h2>
+        📦 <span id="totalLost">0</span>
+    </h2>
+
+    <p>
+        Total Lost
+    </p>
+
+</div>
+
+
+        <div class="stat-card">
+
+    <h2>
+        🔍 <span id="totalFound">0</span>
+    </h2>
+
+    <p>
+        Total Found
+    </p>
+
+</div>
+
+
+       <div class="stat-card">
+
+    <h2>
+        ✅ <span id="totalRecovered">0</span>
+    </h2>
+
+    <p>
+        Recovered
+    </p>
+
+</div>
+
+    </section>
+
+    <div class="chart-container">
+
+    <h2>📊 Lost vs Found Statistics</h2>
+
+    <canvas id="lostFoundChart"></canvas>
+    
+
+</div>
+
+
+    <!-- ==============================
+         NOTIFICATIONS
+    =============================== -->
+
+    
+
+    <section class="notifications-section">
+
+        <div class="notification-card">
+
+            <h2>
+                🔔 Notifications
+            </h2>
+
+            <ul id="notificationList">
+
+                <li>
+                    Welcome to Lost & Found Portal.
+                </li>
+
+                <li>
+                    Report lost or found items from the dashboard.
+                </li>
+
+            </ul>
+
+        </div>
+        <section class="recent-activity">
+
+    <h2>
+        📋 Recent Activity
+    </h2>
+
+    <div id="recentPosts">
+
+        Loading...
+
+    </div>
+
+</section>
+
+    </section>
+
+
+
+
+
+    <!-- ==============================
+         DASHBOARD BUTTONS
+    =============================== -->
+
+    <div
+        class="dashboard-buttons"
+        style="text-align:center;"
+    >
+
+        <nav>
+
+            <a href="lost-item.html">
+
+                <button type="button">
+                    Report Lost Item
+                </button>
+
+            </a>
+
+
+            <a href="found-item.html">
+
+                <button type="button">
+                    Report Found Item
+                </button>
+
+            </a>
+
+
+            <a href="myposts.html">
+
+                <button type="button">
+                    My Posts
+                </button>
+
+            </a>
+
+
+            <a href="profile.html">
+
+                <button type="button">
+                    Profile
+                </button>
+
+            </a>
+
+        </nav>
+
+    </div>
+
+
+    <!-- ==============================
+         LOGOUT
+    =============================== -->
+
+    <div
+        style="text-align:center; margin-top:20px;"
+    >
+
+        <button
+    type="button"
+    class="logout-btn"
+    onclick="logout()"
+>
+    Logout
+</button>
+
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+
+</html>

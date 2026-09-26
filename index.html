@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost & Found Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>Lost & Found Portal</h1>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a id="adminLink" href="admin.html">Admin</a>
+        <a href="myposts.html">My Posts</a>
+        <a href="profile.html">Profile</a>
+
+        <button onclick="toggleTheme()">
+            Dark Mode
+        </button>
+
+        <button onclick="logout()">
+            Logout
+        </button>
+
+    </nav>
+
+</header>
+
+<!-- Hero Section -->
+
+<section class="hero">
+
+    <h2>Lost Something !!!
+        Find It Here.</h2>
+
+    <p>
+        Report lost items, discover found items,
+        and reconnect owners with their belongings.
+    </p>
+
+    <a href="lost-item.html">
+        <button>Report Lost Item</button>
+    </a>
+
+   
+    <a href="found-item.html">
+        <button>Report Found Item</button>
+    </a>
+
+</section>
+
+<!-- Statistics -->
+<section class="stats">
+
+    <div class="stat-card">
+        <h2 id="totalLost">0</h2>
+        <p>Lost Items Reported</p>
+    </div>
+
+    <div class="stat-card">
+        <h2 id="totalFound">0</h2>
+        <p>Found Items Reported</p>
+    </div>
+
+    <div class="stat-card">
+        <h2 id="totalRecovered">0</h2>
+        <p>Items Recovered</p>
+    </div>
+
+</section>
+
+
+
+
+<section class="search-section">
+
+    <h2>Search Lost & Found Items</h2>
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search item name..."
+    >
+
+    <select id="categoryFilter">
+
+        <option value="all">
+            All Categories
+        </option>
+
+        <option value="Mobile">
+            Mobile
+        </option>
+
+        <option value="Wallet">
+            Wallet
+        </option>
+
+        <option value="Bag">
+            Bag
+        </option>
+
+        <option value="Documents">
+            Documents
+        </option>
+
+        <option value="Keys">
+            Keys
+        </option>
+
+        <option value="Other">
+            Other
+        </option>
+
+    </select>
+
+
+    <select id="typeFilter">
+
+        <option value="all">
+            Lost & Found
+        </option>
+
+        <option value="Lost">
+            Lost Items
+        </option>
+
+        <option value="Found">
+            Found Items
+        </option>
+
+    </select>
+
+
+    <select id="statusFilter">
+
+        <option value="all">
+            All Status
+        </option>
+
+        <option value="pending">
+            Pending
+        </option>
+
+        <option value="recovered">
+            Recovered
+        </option>
+
+    </select>
+<button
+    type="button"
+    class="search-btn"
+    onclick="filterItems()"
+>
+    🔎 Search
+</button>
+
+</section>
+
+<!-- ==================================================
+     ALL LOST & FOUND ITEMS
+=================================================== -->
+
+<section class="items-section">
+
+    <h2>All Lost & Found Items</h2>
+
+    <div
+        id="itemsContainer"
+        class="items-container"
+    >
+        <p style="text-align:center;">
+            Loading items...
+        </p>
+    </div>
+
+</section>
+
+
+<!-- Footer -->
+
+<footer>
+
+    <p>
+        Lost & Found Portal © 2026
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

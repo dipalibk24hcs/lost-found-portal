@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ==========================
+         HEADER
+    =========================== -->
+
+    <header>
+
+        <h1>Admin Dashboard</h1>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="dashboard.html">Dashboard</a>
+
+            <a href="myposts.html">My Posts</a>
+
+            <a href="profile.html">Profile</a>
+
+            <button onclick="toggleTheme()">
+                Dark Mode
+            </button>
+
+            <button onclick="logout()">
+                Logout
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ==========================
+         STATISTICS
+    =========================== -->
+
+    <section class="stats">
+
+        <div class="stat-card">
+
+            <h2 id="totalLost">0</h2>
+
+            <p>Total Lost</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2 id="totalFound">0</h2>
+
+            <p>Total Found</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2 id="totalRecovered">0</h2>
+
+            <p>Total Recovered</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================
+         ADMIN ACTIONS
+    =========================== -->
+<section class="admin-actions">
+    <button class="admin-btn"
+        onclick="window.location.href='admin-users.html'">
+    👥 Manage Users
+</button>
+
+        <button
+    class="admin-btn"
+    onclick="window.location.href='admin-users.html'">
+    Manage Items
+</button>
+
+        <button
+    class="admin-btn"
+    onclick="generateReport()">
+    Generate Report
+</button>
+
+
+    </section>
+<!-- ==========================
+     ALL USERS
+=========================== -->
+
+<section class="admin-users-section">
+
+    <h2 style="text-align:center;">
+        👥 Registered Users
+    </h2>
+
+    <div id="adminUsers" class="admin-users-container">
+
+        <p style="text-align:center;">
+            Loading users...
+        </p>
+
+    </div>
+
+</section>
+
+    <!-- ==========================
+         POSTS SECTION
+    =========================== -->
+
+    <section>
+
+        <h2 style="text-align:center;">
+            All Reported Items
+        </h2>
+
+        <div id="adminPosts"></div>
+
+    </section>
+
+
+    <!-- ==========================
+         FOOTER
+    =========================== -->
+
+    <footer>
+
+        <p>
+            Lost & Found Portal © 2026
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```

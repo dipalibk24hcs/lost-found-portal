@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Report Found Item</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Report Found Item</h1>
+</header>
+
+<form id="foundForm">
+
+    <input type="text" id="foundTitle"
+    placeholder="Item Name" required>
+
+    <input type="text" id="foundCategory"
+    placeholder="Category" required>
+
+    <input type="text" id="foundLocation"
+    placeholder="Location" required>
+
+    <textarea id="foundDescription"
+    placeholder="Description"> 
+</textarea>
+
+<label for="foundImage">
+    Upload Item Image
+</label>
+
+<input
+    type="file"
+    id="foundImage"
+    accept="image/*"
+>
+    <button type="submit">
+        Submit Found Item
+    </button>
+
+</form>
+
+<script src="script.js"></script>
+
+</body>
+</html>
