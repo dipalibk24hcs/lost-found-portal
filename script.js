@@ -2,6 +2,7 @@ console.log("script.js loaded");
 
 const API_URL = "https://lost-found-portal-1-8p14.onrender.com/api";
 
+
 document.addEventListener("DOMContentLoaded", function () {
 
     console.log("Page loaded:", window.location.pathname);
