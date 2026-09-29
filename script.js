@@ -1,7 +1,6 @@
 console.log("script.js loaded");
 
-const API_URL = const API_URL = "https://lost-found-portal-1-8p14.onrender.com/api";
-
+const API_URL = "https://lost-found-portal-1-8p14.onrender.com/api";
 
 document.addEventListener("DOMContentLoaded", function () {
 
