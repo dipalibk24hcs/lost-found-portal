@@ -35,12 +35,12 @@ mongoose.connect(process.env.MONGO_URI)
 // Routes
 app.use(
     "/api/auth",
-    require("./authRoutes")
+     require("./routes/authRoutes")
 );
 
 app.use(
     "/api/posts",
-    require("./postRoutes")
+    require("./routes/postRoutes")
 );
 
 // Test Route
